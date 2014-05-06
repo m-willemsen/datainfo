@@ -9,3 +9,5 @@ CREATE TABLE F1 (x VARCHAR(10), y VARCHAR(10), violation BOOLEAN, motivation VAR
 INSERT INTO F1 VALUES ("E", "D", false, "Met E kun je alle andere kolommen bereiken.");
 CREATE TABLE F2 (x VARCHAR(10), y VARCHAR(10), violation BOOLEAN, motivation VARCHAR(200));
 INSERT INTO F2 VALUES ("ABC", "EF", false, "Zie vorige tabel"), ("E", "A", true, "Met E kun je nog steeds niet alle kolommen krijgen");
+
+CREATE TABLE R21 (
