@@ -13,5 +13,5 @@ SELECT p.name, m.year FROM Person p, Movie m WHERE EXISTS (
 
 SELECT p.name, m.year FROM Person p, Movie m WHERE EXISTS (
 	SELECT * FROM Directs d WHERE d.pid=p.pid AND EXISTS(
-SELECT * FROM Genre g WHERE g.mid = d.mid AND g.genre='Action' HAVING COUNT (g.mid) >=2)
+SELECT * FROM Genre g WHERE g.mid = d.mid AND g.genre='Action' GROUP BY g.mid HAVING COUNT (g.mid) >=2)
 );

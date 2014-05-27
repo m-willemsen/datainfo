@@ -1,0 +1,1 @@
+﻿--T1 en T2 moeten allebij READ COMMITTED zijn
